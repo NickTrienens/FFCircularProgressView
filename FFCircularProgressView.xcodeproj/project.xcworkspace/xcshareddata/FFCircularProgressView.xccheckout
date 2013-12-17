@@ -2,35 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5368A90C-DCCF-4885-BC6E-9D8F2EAE408C</string>
+	<string>9F646D2E-DD3A-45D5-A516-B1BA943F787D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FFCircularProgressView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E790F608-895E-4A48-9E49-9804AB49C53A</key>
-		<string>ssh://github.com/elbryan/FFCircularProgressView.git</string>
+		<key>C4C1C0A9-D4E3-4F5C-AD9B-7A89124AEBA8</key>
+		<string>https://github.com/NickTrienens/FFCircularProgressView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FFCircularProgressView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E790F608-895E-4A48-9E49-9804AB49C53A</key>
+		<key>C4C1C0A9-D4E3-4F5C-AD9B-7A89124AEBA8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/elbryan/FFCircularProgressView.git</string>
+	<string>https://github.com/NickTrienens/FFCircularProgressView.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E790F608-895E-4A48-9E49-9804AB49C53A</string>
+	<string>C4C1C0A9-D4E3-4F5C-AD9B-7A89124AEBA8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E790F608-895E-4A48-9E49-9804AB49C53A</string>
+			<string>C4C1C0A9-D4E3-4F5C-AD9B-7A89124AEBA8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FFCircularProgressView</string>
 		</dict>

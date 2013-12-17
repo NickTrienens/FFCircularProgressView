@@ -17,6 +17,8 @@
  **/
 @property (nonatomic, assign) CGFloat progress;
 
+@property(copy) void (^stopButtonPressed)(FFCircularProgressView*);
+
 /**
  * The width of the line used to draw the progress view.
  **/
@@ -32,5 +34,7 @@
  * WARN: This implementation remove all animations from background layer.
  **/
 - (void) stopSpinProgressBackgroundLayer;
+
+
 
 @end
