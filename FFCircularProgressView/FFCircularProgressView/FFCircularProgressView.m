@@ -28,25 +28,26 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        
+        self.strokeColor =[UIColor ios7Blue];
+		self.showsStopButton = YES;
         _lineWidth = self.frame.size.width * 0.025;
         
         self.progressBackgroundLayer = [CAShapeLayer layer];
-        _progressBackgroundLayer.strokeColor = [UIColor ios7Blue].CGColor;
+        _progressBackgroundLayer.strokeColor = self.strokeColor.CGColor;
         _progressBackgroundLayer.fillColor = self.backgroundColor.CGColor;
         _progressBackgroundLayer.lineCap = kCALineCapRound;
         _progressBackgroundLayer.lineWidth = _lineWidth;
         [self.layer addSublayer:_progressBackgroundLayer];
 
         self.progressLayer = [CAShapeLayer layer];
-        _progressLayer.strokeColor = [UIColor ios7Blue].CGColor;
+        _progressLayer.strokeColor = self.strokeColor.CGColor;
         _progressLayer.fillColor = nil;
         _progressLayer.lineCap = kCALineCapSquare;
         _progressLayer.lineWidth = _lineWidth * 2.0;
         [self.layer addSublayer:_progressLayer];
 
         self.iconLayer = [CAShapeLayer layer];
-        _iconLayer.strokeColor = [UIColor ios7Blue].CGColor;
+        _iconLayer.strokeColor = self.strokeColor.CGColor;
         _iconLayer.fillColor = nil;
         _iconLayer.lineCap = kCALineCapButt;
         _iconLayer.lineWidth = _lineWidth;
@@ -78,6 +79,9 @@
     _progressBackgroundLayer.frame = self.bounds;
     _progressLayer.frame = self.bounds;
     _iconLayer.frame = self.bounds;
+	_iconLayer.strokeColor = self.strokeColor.CGColor;
+	_progressLayer.strokeColor = self.strokeColor.CGColor;
+	_progressBackgroundLayer.strokeColor = self.strokeColor.CGColor;
 
     CGPoint center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 
@@ -177,6 +181,8 @@
 }
 
 - (void) drawStop {
+	if(!self.showsStopButton) return;
+	
     CGFloat radius = (self.bounds.size.width)/2;
     CGFloat ratio = kStopSizeRatio;
     CGFloat sideSize = self.bounds.size.width * ratio;
@@ -193,7 +199,7 @@
     
     [_iconLayer setPath:stopPath.CGPath];
     [_iconLayer setStrokeColor:_progressLayer.strokeColor];
-    [_iconLayer setFillColor:[UIColor ios7Blue].CGColor];
+    [_iconLayer setFillColor:self.strokeColor.CGColor];
 }
 
 - (void) drawArrow {

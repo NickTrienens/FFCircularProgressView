@@ -19,6 +19,9 @@
 
 @property(copy) void (^stopButtonPressed)(FFCircularProgressView*);
 
+@property(strong) UIColor * strokeColor;
+
+@property (nonatomic, assign) BOOL showsStopButton;
 /**
  * The width of the line used to draw the progress view.
  **/
