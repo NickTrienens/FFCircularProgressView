@@ -138,7 +138,10 @@
     // Recompute the end angle to make it at 90% of the progress
     if (partial) {
         endAngle = (1.8F * (float)M_PI) + startAngle;
-    }
+    }else{
+		[_progressBackgroundLayer setFillColor:[UIColor colorWithWhite:.0 alpha:.7].CGColor];
+
+	}
 
     [processBackgroundPath addArcWithCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];
 
