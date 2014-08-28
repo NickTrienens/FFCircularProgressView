@@ -103,7 +103,7 @@
     
     if ([self progress] == 1.01) {
         [self drawTick];
-    } else if (([self progress] > 0) && [self progress] < 1.0) {
+    } else if (([self progress] > 0) && [self progress] < 1.0 && self.showsStopButton == YES) {
         [self drawStop];
     } else {
         [self drawArrow];
